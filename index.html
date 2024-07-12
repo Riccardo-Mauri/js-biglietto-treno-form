@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <form>
+            <div>
+                <label for="user-name">
+                    Nome Utente
+                </label>
+                <input type="text" name="name" id="user-name" placeholder="Inserisci il tuo nome..." minlength="3"
+                    maxlength="100" required>
+            </div>
+            <div>
+                <label for="dist-user">
+                    distanza da percorrere
+                </label>
+                <input type="text" name="KM" id="dist-user" placeholder="Inserisci il N° di KM da percorrere..."
+                    minlength="0" required>
+
+            </div>
+            <div>
+                <label for="user-age">
+                    Data di nascita
+                </label>
+                <input type="date" name="age" id="user-age" placeholder="Inserisci la tua età..." required>
+
+            </div>
+            <div>
+                <input type="submit" id="submit-button" value="Invia Dati">
+            </div>
+            
+        
+        </form>
+
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
