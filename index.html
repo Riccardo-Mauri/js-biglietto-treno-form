@@ -10,37 +10,45 @@
 </head>
 
 <body>
-    <main>
-        <form>
-            <div>
-                <label for="user-name">
-                    Nome Utente
-                </label>
+    <main class="container">
+        <form class="form-container">
+            <div class="data-container">
+                <div>
+                    <h2>Inserisci Il Tuo Nome</h2>
+                    <label for="user-name">
+                    </label>
+                </div>
                 <input type="text" name="name" id="user-name" placeholder="Inserisci il tuo nome..." minlength="3"
                     maxlength="100" required>
             </div>
-            <div>
-                <label for="dist-user">
-                    distanza da percorrere
-                </label>
-                <input type="text" name="KM" id="dist-user" placeholder="Inserisci il N° di KM da percorrere..."
-                    minlength="0" required>
+            <div class="data-container">
+                <div>
+                    <h2>Distanza da percorrere</h2>
+                    <label for="dist-user">
+                    </label>
+                </div>
+                <input type="number" name="KM" id="dist-user" placeholder="Inserisci il N° di KM da percorrere..."
+                    minlength="1" required>
 
             </div>
-            <div>
-                <label for="user-age">
-                    Data di nascita
-                </label>
-                <input type="date" name="age" id="user-age" placeholder="Inserisci la tua età..." required>
+            <div class="data-container">
+                <div>
+                    <h2>Inserisci la tua Età</h2>
+                    <label for="user-age">
+                    </label>
+                </div>
+                <input type="number" name="age" id="user-age" placeholder="Inserisci la tua età..." required>
 
             </div>
-            <div>
-                <input type="submit" id="submit-button" value="Invia Dati">
+            <div class="data-container">
+                <input type="submit" class="btn-style" id="submit-button" value="Invia Dati">
             </div>
-            
-        
+
+
         </form>
-
+        <div class="result-container">
+            <p>Il prezzo del biglietto è: <span id="result"></span>&euro;</p>
+        </div>
     </main>
     <script src="js/scripts.js"></script>
 </body>
